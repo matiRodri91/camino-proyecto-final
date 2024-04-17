@@ -1,0 +1,762 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.firstPage {
+  background-image: url(../assets/fondos/fondo-posta-posta.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+  .firstPage div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 4.375rem; }
+    .firstPage div .firstP, .firstPage div .secondP {
+      font-family: "Poppins", sans-serif;
+      font-weight: 300;
+      font-style: normal;
+      font-size: 6.25rem;
+      text-transform: uppercase;
+      color: white; }
+    .firstPage div .imgFondo {
+      width: 15.625rem;
+      height: 15.625rem;
+      margin-top: 1.25rem; }
+
+body {
+  background-image: url(../assets/fondos/latas.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative; }
+
+header .mainHeader {
+  display: flex;
+  position: sticky;
+  top: 0;
+  flex-direction: row;
+  height: 6.25rem;
+  justify-content: space-around;
+  background-color: #004225b7;
+  margin: 1.25rem 7.5rem 0rem 7.5rem; }
+  header .mainHeader h1 {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: .3125rem 1.25rem;
+    color: white; }
+  header .mainHeader .navBar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 20.625rem; }
+    header .mainHeader .navBar ul {
+      display: flex;
+      list-style-type: none;
+      gap: 1.5625rem; }
+      header .mainHeader .navBar ul a {
+        display: inline-block;
+        text-decoration: none;
+        justify-content: center;
+        padding: 0 .625rem;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300; }
+      header .mainHeader .navBar ul a:hover {
+        transform: scale(1.1); }
+
+.firstMain {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: rgba(255, 255, 255, 0.603);
+  margin: 0rem 7.5rem;
+  height: auto;
+  overflow: hidden; }
+
+.divInicio {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 100%; }
+  .divInicio h2 {
+    display: flex;
+    height: 6.25rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem 0;
+    margin-top: 6.25rem;
+    font-family: "Rufina", serif;
+    font-weight: 400;
+    font-size: 4.375rem;
+    font-style: normal;
+    text-align: center; }
+  .divInicio p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 18.75rem;
+    font-family: "Rufina", serif;
+    font-weight: 21.875rem;
+    font-size: 1.25rem;
+    text-align: justify;
+    margin: 0 1.875rem; }
+  .divInicio img {
+    display: flex;
+    width: 31.25rem;
+    height: 34.375rem;
+    margin: 2.8125rem auto 0 auto;
+    transition: all 0.3s; }
+  .divInicio img:hover {
+    transform: scale(1.2); }
+
+.secondMain {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  background-color: #FFB000;
+  background-size: cover;
+  height: 100%;
+  flex-wrap: wrap;
+  margin: 0rem 7.5rem 0rem 7.5rem;
+  height: 46.875rem; }
+  .secondMain h2 {
+    display: flex;
+    align-items: end;
+    font-size: 2.5rem;
+    grid-column: 4/8;
+    grid-row: 1; }
+  .secondMain .alemania {
+    display: grid;
+    grid-template-columns: repeat(4, 6.25rem);
+    grid-template-rows: repeat(5, 2.875rem);
+    justify-items: auto;
+    background-color: white;
+    width: 25rem;
+    height: 14.375rem;
+    border-radius: 1.875rem;
+    grid-column: 2/4;
+    grid-row: 3/5;
+    flex-wrap: wrap; }
+  .secondMain .boxAlemania {
+    display: grid;
+    width: 8.125rem;
+    height: 8.125rem;
+    align-items: center;
+    grid-column: 1;
+    grid-row: 2;
+    flex-wrap: wrap; }
+  .secondMain .alemaniaFlag {
+    display: grid;
+    width: 6.25rem;
+    height: 6.25rem;
+    grid-column: 3 / 4;
+    grid-row: 1;
+    flex-wrap: wrap; }
+  .secondMain .alemanProd {
+    display: grid;
+    height: 3.125rem;
+    grid-column: 2/5;
+    grid-row: 3/5;
+    text-align: justify;
+    margin-left: 1.875rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+  .secondMain .alemaniaPrecio {
+    display: grid;
+    grid-column: 2;
+    grid-row: 5;
+    justify-content: center;
+    flex-wrap: wrap; }
+  .secondMain .alemaniaBoton {
+    display: grid;
+    grid-column: 4;
+    grid-row: 5;
+    justify-content: center;
+    text-decoration: none;
+    padding: .625rem 1.25rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    flex-wrap: wrap; }
+  .secondMain .alemaniaBoton:hover {
+    background-color: #45a049; }
+
+.secondMain .arabe {
+  display: grid;
+  grid-template-columns: repeat(4, 6.25rem);
+  grid-template-rows: repeat(5, 2.875rem);
+  background-color: white;
+  width: 25rem;
+  height: 14.375rem;
+  border-radius: 1.875rem;
+  grid-column: 7/9;
+  grid-row: 3/5;
+  flex-wrap: wrap; }
+
+.secondMain .boxArabe {
+  display: grid;
+  width: 8.125rem;
+  height: 8.125rem;
+  align-items: center;
+  grid-column: 1;
+  grid-row: 2; }
+
+.secondMain .arabeFlag {
+  display: grid;
+  width: 6.25rem;
+  height: 6.25rem;
+  grid-column: 3 / 4;
+  grid-row: 1; }
+
+.secondMain .arabeProd {
+  display: grid;
+  height: 3.125rem;
+  grid-column: 2/5;
+  grid-row: 3/5;
+  text-align: justify;
+  margin-left: 1.875rem;
+  justify-content: center;
+  align-items: center; }
+
+.secondMain .arabePrecio {
+  display: grid;
+  grid-column: 2;
+  grid-row: 5;
+  justify-content: center; }
+
+.secondMain .arabeBoton {
+  display: grid;
+  grid-column: 4;
+  grid-row: 5;
+  justify-content: center;
+  text-decoration: none;
+  padding: .625rem 1.25rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: .3125rem;
+  cursor: pointer; }
+
+.secondMain .arabeBoton:hover {
+  background-color: #45a049; }
+
+.secondMain .mexico {
+  display: grid;
+  grid-template-columns: repeat(4, 6.25rem);
+  grid-template-rows: repeat(5, 2.875rem);
+  background-color: white;
+  width: 25rem;
+  height: 14.375rem;
+  border-radius: 1.875rem;
+  grid-column: 2/4;
+  grid-row: 6/8;
+  flex-wrap: wrap; }
+
+.secondMain .boxMexico {
+  display: grid;
+  width: 8.125rem;
+  height: 8.125rem;
+  align-items: center;
+  grid-column: 1;
+  grid-row: 2; }
+
+.secondMain .mexicoFlag {
+  display: grid;
+  width: 6.25rem;
+  height: 6.25rem;
+  grid-column: 3 / 4;
+  grid-row: 1; }
+
+.secondMain .mexicoProd {
+  display: grid;
+  height: 3.125rem;
+  grid-column: 2/5;
+  grid-row: 3/5;
+  text-align: justify;
+  margin-left: 1.875rem;
+  justify-content: center;
+  align-items: center; }
+
+.secondMain .mexicoPrecio {
+  display: grid;
+  grid-column: 2;
+  grid-row: 5;
+  justify-content: center; }
+
+.secondMain .mexicoBoton {
+  display: grid;
+  grid-column: 4;
+  grid-row: 5;
+  justify-content: center;
+  text-decoration: none;
+  padding: .625rem 1.25rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: .3125rem;
+  cursor: pointer; }
+
+.secondMain .mexicoBoton:hover {
+  background-color: #45a049; }
+
+.secondMain .japon {
+  display: grid;
+  grid-template-columns: repeat(4, 6.25rem);
+  grid-template-rows: repeat(5, 2.875rem);
+  background-color: white;
+  width: 25rem;
+  height: 14.375rem;
+  border-radius: 1.875rem;
+  grid-column: 7/9;
+  grid-row: 6/8;
+  flex-wrap: wrap; }
+
+.secondMain .boxJapon {
+  display: grid;
+  width: 8.125rem;
+  height: 8.125rem;
+  align-items: center;
+  grid-column: 1;
+  grid-row: 2; }
+
+.secondMain .japonFlag {
+  display: grid;
+  width: 6.25rem;
+  height: 6.25rem;
+  grid-column: 3 / 4;
+  grid-row: 1; }
+
+.secondMain .japonProd {
+  display: grid;
+  height: 3.125rem;
+  grid-column: 2/5;
+  grid-row: 3/5;
+  text-align: justify;
+  margin-left: 1.875rem;
+  justify-content: center;
+  align-items: center; }
+
+.secondMain .japonPrecio {
+  display: grid;
+  grid-column: 2;
+  grid-row: 5;
+  justify-content: center; }
+
+.secondMain .japonBoton {
+  display: grid;
+  grid-column: 4;
+  grid-row: 5;
+  justify-content: center;
+  text-decoration: none;
+  padding: .625rem 1.25rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: .3125rem;
+  cursor: pointer; }
+
+.secondMain .japonBoton:hover {
+  background-color: #4546a0; }
+
+.thirdMain {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.507);
+  margin: 0rem 7.5rem;
+  height: 50rem; }
+  .thirdMain h2 {
+    display: flex;
+    height: 6.875rem;
+    justify-content: center;
+    font-size: 2.5rem;
+    margin-right: 1.875rem;
+    margin: 3.125rem 0 0 1.875rem; }
+  .thirdMain .firsCarrousel, .thirdMain .secondCarrousel {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 4.0625rem;
+    height: 15rem;
+    background-color: #004225; }
+    .thirdMain .firsCarrousel .prodCarrousel, .thirdMain .secondCarrousel .prodCarrousel {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      width: 8.125rem;
+      height: 12.1875rem;
+      justify-content: space-evenly;
+      align-content: center;
+      background-color: white;
+      /*.verMas2{
+                    display: flex;
+                    width: auto;
+                    height: 1.25rem;
+                    justify-content: end;
+                    text-decoration: none;
+                    color: white;
+                    border: none;
+                    cursor: pointer;
+                    margin-bottom: .625rem;
+                    margin-right: .9375rem;
+                    }*/ }
+      .thirdMain .firsCarrousel .prodCarrousel img, .thirdMain .secondCarrousel .prodCarrousel img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 8.125rem; }
+      .thirdMain .firsCarrousel .prodCarrousel p, .thirdMain .secondCarrousel .prodCarrousel p {
+        display: flex;
+        justify-content: center; }
+      .thirdMain .firsCarrousel .prodCarrousel a, .thirdMain .secondCarrousel .prodCarrousel a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        margin-left: .9375rem;
+        width: 6.25rem;
+        height: 1.5625rem;
+        padding: .625rem 1.25rem;
+        background-color: white;
+        color: #ffd900;
+        border: none;
+        border-radius: .3125rem;
+        cursor: pointer; }
+      .thirdMain .firsCarrousel .prodCarrousel a:hover, .thirdMain .secondCarrousel .prodCarrousel a:hover {
+        background-color: #004225; }
+    .thirdMain .firsCarrousel .verMas2, .thirdMain .secondCarrousel .verMas2 {
+      display: flex;
+      width: 100%;
+      height: 1.25rem;
+      justify-content: end;
+      text-decoration: none;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-bottom: .625rem;
+      margin-right: .9375rem; }
+
+.fourthMain {
+  display: flex;
+  flex-direction: row;
+  background-color: #FFCF9D;
+  flex-wrap: wrap;
+  margin: 0rem 7.5rem 0rem 7.5rem;
+  height: 46.875rem; }
+  .fourthMain .fourthH {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    font-family: "Rufina", serif;
+    font-weight: 31.25rem;
+    font-size: 2.8125rem;
+    margin: 3.125rem 0 0 0; }
+  .fourthMain .clientes {
+    display: flex;
+    flex-direction: column; }
+  .fourthMain p {
+    display: flex;
+    width: 20.625rem;
+    height: 3.125rem;
+    padding-left: 1.875rem;
+    text-align: center; }
+  .fourthMain .chica {
+    display: flex;
+    width: 20rem;
+    height: 28.125rem;
+    padding: 3.125rem 1.875rem;
+    border-radius: 50%;
+    margin-left: 2.5rem; }
+  .fourthMain .chico-2 {
+    display: flex;
+    width: 20.625rem;
+    height: 28.125rem;
+    padding: 3.125rem 1.25rem;
+    border-radius: 50%; }
+  .fourthMain .chico {
+    display: flex;
+    width: 20rem;
+    height: 28.125rem;
+    padding: 3.125rem .625rem;
+    border-radius: 50%;
+    margin-left: 1.5625rem; }
+
+.fifthMain {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.507);
+  margin: 0rem 7.5rem;
+  height: 50rem;
+  overflow: hidden; }
+  .fifthMain h2 {
+    display: flex;
+    align-items: end;
+    font-size: 2.5rem;
+    grid-column: 4/8;
+    grid-row: 1;
+    justify-content: center;
+    gap: .625rem; }
+  .fifthMain p {
+    display: flex;
+    align-items: end;
+    font-size: 1.125rem;
+    grid-column: 4/8;
+    grid-row: 1;
+    text-align: center;
+    justify-content: center;
+    gap: .625rem; }
+  .fifthMain section .sub-heading {
+    margin-bottom: .5em;
+    font-weight: bold;
+    text-align: center; }
+  .fifthMain section .contactForm {
+    display: grid;
+    gap: 3em; }
+  .fifthMain section form {
+    width: 100%;
+    margin-top: 3em; }
+  .fifthMain section .input {
+    width: 95%;
+    max-width: 700px;
+    border: none;
+    font-size: .9rem;
+    padding: 1em;
+    outline: none;
+    background-color: var(--formBg);
+    color: var(--paraColor);
+    border-radius: 10px;
+    border: 1px solid #353535;
+    margin-bottom: 1em; }
+    .fifthMain section .input .input:focus {
+      border: 1px solid var(--primaryColor); }
+    .fifthMain section .input .input::placeholder {
+      text-transform: capitalize; }
+  .fifthMain section .submit {
+    background-color: var(--primaryColor);
+    border: none;
+    color: var(--textColor);
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%; }
+  .fifthMain .map-container {
+    position: relative;
+    width: 100%;
+    height: 500px; }
+    .fifthMain .map-container .mapBg {
+      position: absolute;
+      background-color: var(--primaryColor);
+      top: 0;
+      right: 0;
+      width: 200px;
+      height: 90%;
+      border-radius: 20px; }
+    .fifthMain .map-container .map {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 90%;
+      height: 90%; }
+      .fifthMain .map-container .map .map iframe {
+        width: 100%;
+        height: 100%; }
+  .fifthMain .contactMethod {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    text-align: left; }
+    .fifthMain .contactMethod .method {
+      display: flex;
+      align-items: center; }
+      .fifthMain .contactMethod .method .contactIcon {
+        font-size: 2rem;
+        color: var(--primaryColor);
+        width: 70px; }
+
+@media screen and (min-width: 800px) {
+  section {
+    max-width: 1100px; }
+  .contactForm {
+    grid-template-columns: 1fr 1fr; }
+  .contactMethod {
+    flex-direction: row;
+    justify-content: space-between; } }
+
+footer {
+  background-color: black;
+  padding: 2.5rem 5rem;
+  color: white; }
+
+@media (max-width: 1024px) {
+  .secondMain h2 {
+    grid-column: 2 / 8;
+    margin-left: 55%; }
+  .secondMain .alemania {
+    width: 23rem; }
+    .secondMain .alemania .alemanProd {
+      width: 14.375rem; }
+    .secondMain .alemania .alemaniaBoton {
+      margin-right: 1.875rem; }
+  .secondMain .arabe {
+    width: 23rem; }
+    .secondMain .arabe .arabeProd {
+      width: 14.375rem; }
+    .secondMain .arabe .arabeBoton {
+      margin-right: 1.875rem; }
+  .secondMain .mexico {
+    width: 23rem; }
+    .secondMain .mexico .mexicoProd {
+      width: 14.375rem; }
+    .secondMain .mexico .mexicoBoton {
+      margin-right: 1.875rem; }
+  .secondMain .japon {
+    width: 23rem; }
+    .secondMain .japon .japonProd {
+      width: 14.375rem; }
+    .secondMain .japon .japonBoton {
+      margin-right: 1.875rem; }
+  .thirdMain .firsCarrousel, .thirdMain .secondCarrousel {
+    height: 13rem; }
+    .thirdMain .firsCarrousel .prodCarrousel, .thirdMain .secondCarrousel .prodCarrousel {
+      width: 6rem;
+      height: auto;
+      align-items: center; }
+      .thirdMain .firsCarrousel .prodCarrousel img, .thirdMain .secondCarrousel .prodCarrousel img {
+        width: 6rem; }
+      .thirdMain .firsCarrousel .prodCarrousel a, .thirdMain .secondCarrousel .prodCarrousel a {
+        width: 4.5rem;
+        margin-left: .8rem; } }
+
+@media (max-width: 768px) {
+  header {
+    background-color: #004225b7; }
+    header .mainHeader {
+      margin: 0;
+      display: block;
+      height: auto; }
+      header .mainHeader h1 {
+        display: block;
+        width: auto; }
+      header .mainHeader .navBar {
+        display: block;
+        margin: 0; }
+        header .mainHeader .navBar ul {
+          display: flex;
+          flex-direction: column;
+          gap: 0;
+          align-items: center; }
+  .firstMain {
+    margin: 0 3%; }
+    .firstMain .divInicio h2 {
+      font-size: 3rem; }
+    .firstMain .divInicio img {
+      margin: 0 auto;
+      width: 80%;
+      height: auto; }
+  .secondMain {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: auto; }
+    .secondMain h2 {
+      justify-content: center;
+      margin: 1rem 0; }
+    .secondMain article {
+      margin: .9375rem auto; }
+  .thirdMain {
+    margin: 0 3%; }
+    .thirdMain .firsCarrousel {
+      overflow: scroll;
+      justify-content: center; }
+      .thirdMain .firsCarrousel .prodCarrousel {
+        width: fit-content; }
+    .thirdMain .secondCarrousel {
+      overflow: scroll;
+      justify-content: center; } }
+
+@media (max-width: 320px) {
+  .firstMain .divInicio {
+    height: 62.5rem; }
+    .firstMain .divInicio h2 {
+      font-size: 1.875rem; }
+    .firstMain .divInicio p {
+      align-content: center;
+      flex: auto; }
+  .secondMain {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    height: max-content;
+    gap: 1.25rem; }
+    .secondMain .alemania {
+      display: flex;
+      width: 18.75rem;
+      margin: 0 .3125rem auto .3125rem; }
+      .secondMain .alemania .alemaniaFlag {
+        margin: auto; }
+      .secondMain .alemania .alemanProd {
+        margin: 0;
+        text-align: center; }
+      .secondMain .alemania .alemaniaPrecio {
+        margin-left: 15%; }
+      .secondMain .alemania .alemaniaBoton {
+        margin-left: 20%; }
+    .secondMain .arabe {
+      display: flex;
+      width: 18.75rem;
+      margin: 0 .3125rem auto .3125rem; }
+      .secondMain .arabe .arabeFlag {
+        margin: auto; }
+      .secondMain .arabe .arabeProd {
+        margin: 0;
+        text-align: center; }
+      .secondMain .arabe .arabePrecio {
+        margin-left: 15%; }
+      .secondMain .arabe .arabeBoton {
+        margin-left: 20%; }
+    .secondMain .mexico {
+      display: flex;
+      width: 18.75rem;
+      margin: 0 .3125rem auto .3125rem; }
+      .secondMain .mexico .mexicoFlag {
+        margin: auto; }
+      .secondMain .mexico .mexicoProd {
+        margin: 0;
+        text-align: center; }
+      .secondMain .mexico .mexicoPrecio {
+        margin-left: 15%; }
+      .secondMain .mexico .mexicoBoton {
+        margin-left: 20%; }
+    .secondMain .japon {
+      display: flex;
+      width: 18.75rem;
+      margin: 0 .3125rem auto .3125rem; }
+      .secondMain .japon .japonFlag {
+        margin: auto; }
+      .secondMain .japon .japonProd {
+        margin: 0;
+        text-align: center; }
+      .secondMain .japon .japonPrecio {
+        margin-left: 15%; }
+      .secondMain .japon .japonBoton {
+        margin-left: 20%; }
+  .thirdMain {
+    margin: .9375rem 1.25rem; }
+    .thirdMain h2 {
+      text-align: center; }
+    .thirdMain .firstCarrousel {
+      margin: 1.25rem 0; }
+      .thirdMain .firstCarrousel .prodCarrousel {
+        margin: 1.25rem 0; } }

@@ -1,0 +1,11 @@
+alemania {display: grid;
+grid-template-columns: repeat(4, 6.25rem);
+grid-template-rows: repeat(5, 2.875rem);
+justify-items: auto;
+background-color: white;
+width: 25rem;
+height: 14.375rem;
+border-radius: 1.875rem;
+grid-column: 2/4;
+grid-row: 3/5;
+flex-wrap: wrap;}

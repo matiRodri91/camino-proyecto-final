@@ -1,0 +1,702 @@
+@import "./base/reset";
+@import "./layout/mediaQuerry/mediaQuerry1024";
+@import "./layout/mediaQuerry/mediaQuerry768";
+@import "./layout/mediaQuerry/mediaQuerry320";
+.firstPage{
+    background-image: url(../assets/fondos/fondo-posta-posta.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-top: 4.375rem;
+        .firstP{
+            font-family: "Poppins", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            font-size: 6.25rem;
+            text-transform: uppercase;
+            color: white;
+            
+            }
+        .imgFondo{
+            width: 15.625rem;
+            height: 15.625rem;
+            margin-top: 1.25rem;
+            }
+        .secondP{
+            @extend .firstP
+        }
+    }
+}
+
+body{
+    background-image: url(../assets/fondos/latas.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+header{
+    .mainHeader{
+        display: flex;
+        position: sticky;
+        top: 0;
+        flex-direction: row;
+        height: 6.25rem;
+        justify-content: space-around;
+        background-color: #004225b7;
+        margin: 1.25rem 7.5rem 0rem 7.5rem;
+        h1{
+            display: flex;
+            width: 100%;
+            justify-content: flex-start;
+            font-family: "Poppins", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            font-size: 2.5rem;
+            text-align: center;
+            margin: .3125rem 1.25rem;
+            color: white;
+        }
+        .navBar{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-right: 20.625rem;
+            ul{
+                display: flex;
+                list-style-type: none;
+                gap: 1.5625rem;
+                a{
+                    display: inline-block;
+                    text-decoration: none;
+                    justify-content: center;
+                    padding: 0 .625rem;
+                    color: white;
+                    font-family: "Poppins", sans-serif;
+                    font-weight: 300;
+                }
+                a:hover{
+                    transform: scale(1.1);
+                }
+            }
+        
+        }
+    }
+}
+
+.firstMain{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: rgba(255, 255, 255, 0.603);
+    margin: 0rem 7.5rem;
+    height: auto;
+    overflow: hidden;
+
+    }
+    .divInicio{
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+        width: 100%;
+        h2{
+            display: flex;
+            height: 6.25rem;
+            justify-content: center;
+            align-items: center;
+            padding: 2.5rem 0;
+            margin-top: 6.25rem;
+            font-family: "Rufina", serif;
+            font-weight: 400;   
+            font-size: 4.375rem;
+            font-style:normal;
+            text-align: center;
+        }
+        p{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 18.75rem;
+            font-family: "Rufina", serif;
+            font-weight: 21.875rem;
+            font-size: 1.25rem;
+            text-align: justify;
+            margin: 0 1.875rem;
+        }
+            img{
+                display: flex;
+                width: 31.25rem;
+                height: 34.375rem;
+                margin: 2.8125rem auto 0 auto;
+                transition: all 0.3s;
+
+            }
+            img:hover{
+                transform: scale(1.2);
+            }
+    }
+
+
+.secondMain{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    background-color: #FFB000;
+    background-size: cover;
+    height: 100%;
+    flex-wrap: wrap;
+    margin: 0rem 7.5rem 0rem 7.5rem;
+    height: 46.875rem;
+    h2{
+        display: flex;
+        align-items: end;
+        font-size: 2.5rem;
+        grid-column: 4/8;
+        grid-row: 1;
+    }
+    .alemania{
+        display: grid;
+        grid-template-columns: repeat(4, 6.25rem);
+        grid-template-rows: repeat(5, 2.875rem);
+        justify-items: auto;
+        background-color: white;
+        width: 25rem;
+        height: 14.375rem;
+        border-radius: 1.875rem;
+        grid-column: 2/4;
+        grid-row: 3/5;
+        flex-wrap: wrap;};
+        .boxAlemania{
+            display: grid;
+            width: 8.125rem;
+            height: 8.125rem;
+            align-items: center;
+            grid-column: 1;
+            grid-row: 2;
+            flex-wrap: wrap;
+            }
+        .alemaniaFlag{
+            display: grid;
+            width: 6.25rem;
+            height: 6.25rem;
+            grid-column: 3 / 4;
+            grid-row: 1;
+            flex-wrap: wrap;}
+        .alemanProd{
+            display: grid;
+            height: 3.125rem;
+            grid-column: 2/5;
+            grid-row: 3/5;
+            text-align: justify;
+            margin-left: 1.875rem;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;}
+            .alemaniaPrecio{
+                display: grid;
+                grid-column: 2;
+                grid-row: 5;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            .alemaniaBoton{
+                display: grid;
+                grid-column: 4;
+                grid-row: 5;
+                justify-content: center;
+                text-decoration: none;
+                padding: .625rem 1.25rem;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                flex-wrap: wrap;}
+                    .alemaniaBoton:hover {
+                        background-color: #45a049;}
+}
+.secondMain{
+    .arabe{
+        display: grid;
+        grid-template-columns: repeat(4, 6.25rem);
+        grid-template-rows: repeat(5, 2.875rem);
+        background-color: rgb(255, 255, 255);
+        width: 25rem;
+        height: 14.375rem;
+        border-radius: 1.875rem;
+        grid-column: 7/9;
+        grid-row: 3/5;
+        flex-wrap: wrap;
+        }               
+        .boxArabe{
+            display: grid;
+            width: 8.125rem;
+            height: 8.125rem;
+            align-items: center;
+            grid-column: 1;
+            grid-row: 2;
+            }                
+        .arabeFlag{
+            display: grid;
+            width: 6.25rem;
+            height: 6.25rem;
+            grid-column: 3 / 4;
+            grid-row: 1;
+            }                    
+        .arabeProd{
+            display: grid;
+            height: 3.125rem;
+            grid-column: 2/5;
+            grid-row: 3/5;
+            text-align: justify;
+            margin-left: 1.875rem;
+            justify-content: center;
+            align-items: center;                
+            }            
+        .arabePrecio{
+            display: grid;
+            grid-column: 2;
+            grid-row: 5;
+            justify-content: center;
+            }                        
+        .arabeBoton{
+            display: grid;
+            grid-column: 4;
+            grid-row: 5;
+            justify-content: center;
+            text-decoration: none;
+            padding: .625rem 1.25rem;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: .3125rem;
+            cursor: pointer;
+            }        
+                .arabeBoton:hover {
+                    background-color: #45a049;
+                }
+}
+.secondMain{
+    .mexico{
+        display: grid;
+        grid-template-columns: repeat(4, 6.25rem);
+        grid-template-rows: repeat(5, 2.875rem);
+        background-color: white;
+        width: 25rem;
+        height: 14.375rem;
+        border-radius: 1.875rem;
+        grid-column: 2/4;
+        grid-row: 6/8;
+        flex-wrap: wrap;
+    }
+        .boxMexico{
+            display: grid;
+            width: 8.125rem;
+            height: 8.125rem;
+            align-items: center;
+            grid-column: 1;
+            grid-row: 2;
+        }
+        .mexicoFlag{
+            display: grid;
+            width: 6.25rem;
+            height: 6.25rem;
+            grid-column: 3 / 4;
+            grid-row: 1;
+        }
+        .mexicoProd{
+            display: grid;
+            height: 3.125rem;
+            grid-column: 2/5;
+            grid-row: 3/5;
+            text-align: justify;
+            margin-left: 1.875rem;
+            justify-content: center;
+            align-items: center;   
+        }
+        .mexicoPrecio{
+            display: grid;
+            grid-column: 2;
+            grid-row: 5;
+            justify-content: center;
+        }
+        .mexicoBoton{
+            display: grid;
+            grid-column: 4;
+            grid-row: 5;
+            justify-content: center;
+            text-decoration: none;
+            padding: .625rem 1.25rem;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: .3125rem;
+            cursor: pointer;
+        }
+            .mexicoBoton:hover {
+                background-color: #45a049;
+        }
+}
+
+.secondMain{
+    .japon{
+        display: grid;
+        grid-template-columns: repeat(4, 6.25rem);
+        grid-template-rows: repeat(5, 2.875rem);
+        background-color: white;
+        width: 25rem;
+        height: 14.375rem;
+        border-radius: 1.875rem;
+        grid-column: 7/9;
+        grid-row: 6/8;
+        flex-wrap: wrap;}
+        .boxJapon{
+            display: grid;
+            width: 8.125rem;
+            height: 8.125rem;
+            align-items: center;
+            grid-column: 1;
+            grid-row: 2;}
+        .japonFlag{
+            display: grid;
+            width: 6.25rem;
+            height: 6.25rem;
+            grid-column: 3 / 4;
+            grid-row: 1;
+            }
+        .japonProd{
+            display: grid;
+            height: 3.125rem;
+            grid-column: 2/5;
+            grid-row: 3/5;
+            text-align: justify;
+            margin-left: 1.875rem;
+            justify-content: center;
+            align-items: center;        
+            }
+        .japonPrecio{
+            display: grid;
+            grid-column: 2;
+            grid-row: 5;
+            justify-content: center;
+            }
+        .japonBoton{
+            display: grid;
+            grid-column: 4;
+            grid-row: 5;
+            justify-content: center;
+            text-decoration: none;
+            padding: .625rem 1.25rem;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: .3125rem;
+            cursor: pointer;
+            }
+            .japonBoton:hover {
+                background-color: #4546a0;
+}
+}
+
+.thirdMain{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.507);
+    margin: 0rem 7.5rem;
+    height: 50rem;
+    h2{
+        display: flex;
+        height: 6.875rem;
+        justify-content: center;
+        font-size: 2.5rem;
+        margin-right: 1.875rem;
+        margin: 3.125rem 0 0 1.875rem;
+    }
+    .firsCarrousel, .secondCarrousel{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 4.0625rem;
+        height: 15rem;
+        background-color: #004225;
+        .prodCarrousel{
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            width: 8.125rem;
+            height: 12.1875rem;
+            justify-content: space-evenly;
+            align-content: center;
+            background-color: white;
+            img{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 8.125rem;}
+            p{
+                display: flex;
+                justify-content: center;}
+            a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                margin-left: .9375rem;
+                width: 6.25rem;
+                height: 1.5625rem;
+                padding: .625rem 1.25rem;
+                background-color: white;
+                color: rgb(255, 217, 0);
+                border: none;
+                border-radius: .3125rem;
+                cursor: pointer;
+            }
+                a:hover {
+                    background-color: #004225;
+                }
+                /*.verMas2{
+                    display: flex;
+                    width: auto;
+                    height: 1.25rem;
+                    justify-content: end;
+                    text-decoration: none;
+                    color: white;
+                    border: none;
+                    cursor: pointer;
+                    margin-bottom: .625rem;
+                    margin-right: .9375rem;
+                    }*/
+            }
+            .verMas2{
+                display: flex;
+                width: 100%;
+                height: 1.25rem;
+                justify-content: end;
+                text-decoration: none;
+                color: white;
+                border: none;
+                cursor: pointer;
+                margin-bottom: .625rem;
+                margin-right: .9375rem;
+                
+            }
+        }
+    }
+
+
+.fourthMain{
+    display: flex;
+    flex-direction: row;
+    background-color: #FFCF9D;
+    flex-wrap: wrap;
+    margin: 0rem 7.5rem 0rem 7.5rem;
+    height: 46.875rem;
+    .fourthH{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 5rem;
+        font-family: "Rufina", serif;
+        font-weight: 31.25rem;
+        font-size: 2.8125rem;
+        margin: 3.125rem 0 0 0;
+    }
+    .clientes{
+        display: flex;
+        flex-direction: column;
+    }
+    p{
+        display: flex;
+        width: 20.625rem;
+        height: 3.125rem;
+        padding-left: 1.875rem;
+        text-align: center;
+    }
+    .chica{
+    display: flex;
+    width: 20rem;
+    height: 28.125rem;
+    padding: 3.125rem 1.875rem;
+    border-radius: 50%;
+    margin-left: 2.5rem;
+    }
+    .chico-2{
+        display: flex;
+        width: 20.625rem;
+        height: 28.125rem;
+        padding: 3.125rem 1.25rem;
+        border-radius: 50%;
+    }
+    .chico{
+        display: flex;
+        width: 20rem;
+        height: 28.125rem;
+        padding: 3.125rem .625rem;
+        border-radius: 50%;
+        margin-left: 1.5625rem;
+    }
+}
+
+.fifthMain{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.507);
+    margin: 0rem 7.5rem;
+    height: 50rem;
+    overflow: hidden;
+    h2{
+        display: flex;
+        align-items: end;
+        font-size: 2.5rem;
+        grid-column: 4/8;
+        grid-row: 1;
+        justify-content: center;
+        gap: .625rem;
+    }
+    p{
+        display: flex;
+        align-items: end;
+        font-size: 1.125rem;
+        grid-column: 4/8;
+        grid-row: 1;
+        text-align: center;
+        justify-content: center;
+        gap: .625rem;}
+    section{
+        .sub-heading{
+            margin-bottom: .5em;
+            font-weight: bold;
+            text-align: center;
+        }
+        .contactForm{
+            display: grid;
+            gap: 3em;
+        }
+            form{
+                width: 100%;
+                margin-top: 3em;
+                }
+                .input{
+                    width: 95%;
+                    max-width: 700px;
+                    border: none;
+                    font-size: .9rem;
+                    padding: 1em;
+                    outline: none;
+                    background-color: var(--formBg);
+                    color: var(--paraColor);
+                    border-radius: 10px;
+                    border: 1px solid rgb(53, 53, 53);
+                    margin-bottom: 1em;
+                    .input:focus{
+                        border: 1px solid var(--primaryColor);
+                    }
+                    .input::placeholder{
+                        text-transform: capitalize;
+                    }
+                }
+                .submit{
+                    background-color: var(--primaryColor);
+                    border: none;
+                    color: var(--textColor);
+                    font-weight: bold;
+                    cursor: pointer;
+                    width: 100%;
+                }
+            }
+            .map-container{
+                position: relative;
+                width: 100%;
+                height: 500px;
+                .mapBg{
+                    position: absolute;
+                    background-color: var(--primaryColor);
+                    top: 0;
+                    right: 0;
+                    width: 200px;
+                    height: 90%;
+                    border-radius: 20px;
+                }
+                .map{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 90%;
+                    height: 90%;
+                    .map iframe{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+            .contactMethod{
+                display: flex;
+                flex-direction: column;
+                margin-top: 2em;
+                text-align: left;
+                .method{
+                    display: flex;
+                    align-items: center;
+                    .contactIcon{
+                        font-size: 2rem;
+                        color: var(--primaryColor);
+                        width: 70px;
+                    }
+                }
+            }
+        }
+    
+
+
+        
+
+        
+        @media screen and (min-width:800px) {
+            section{
+                max-width: 1100px;
+            }
+            .contactForm{
+                grid-template-columns: 1fr 1fr;
+            }   
+        
+            .contactMethod{
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+
+
+    
+
+footer{
+    background-color: black;
+    padding: 2.5rem 5rem;
+    color: white;
+}
+
+@include laptop;
+@include tablet;
+@include mobile;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

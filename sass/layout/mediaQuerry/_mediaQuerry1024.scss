@@ -1,0 +1,63 @@
+@mixin laptop{
+    @media(max-width: 1024px){
+        .secondMain{
+            h2{
+                grid-column: 2 / 8;
+                margin-left: 55%;
+            }
+            .alemania{
+                width: 23rem;
+                .alemanProd{
+                    width: 14.375rem
+                }
+                .alemaniaBoton{
+                    margin-right: 1.875rem;
+                }
+            }
+            .arabe{
+                width: 23rem;
+                .arabeProd{
+                    width: 14.375rem
+                }
+                .arabeBoton{
+                    margin-right: 1.875rem;
+                }
+            }
+            .mexico{
+                width: 23rem;
+                .mexicoProd{
+                    width: 14.375rem
+                }
+                .mexicoBoton{
+                    margin-right: 1.875rem;
+                }
+            }
+            .japon{
+                width: 23rem;
+                .japonProd{
+                    width: 14.375rem
+                }
+                .japonBoton{
+                    margin-right: 1.875rem;
+                }
+            }
+        }
+        .thirdMain{
+            .firsCarrousel, .secondCarrousel{
+                height: 13rem;
+                .prodCarrousel{
+                    width: 6rem;
+                    height: auto;
+                    align-items: center;
+                    img{
+                        width: 6rem;
+                    }
+                    a{
+                        width: 4.5rem;
+                        margin-left: .8rem;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,107 @@
+@mixin mobile{
+    @media(max-width: 320px){
+        .firstMain{
+            .divInicio{
+                height: 62.5rem;
+                h2{
+                    font-size: 1.875rem;
+                }
+                p{
+                    align-content: center;
+                    flex: auto;
+                }
+            }
+        }
+        .secondMain{
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, 1fr);
+            height: max-content;
+            gap: 1.25rem;
+            .alemania{
+                display: flex;
+                width: 18.75rem;
+                margin: 0 .3125rem auto .3125rem;
+                .alemaniaFlag{
+                    margin: auto;
+                }
+                .alemanProd{
+                    margin: 0;
+                    text-align: center;
+                }
+                .alemaniaPrecio{
+                    margin-left: 15%;
+                }
+                .alemaniaBoton{
+                    margin-left: 20%;
+                }
+            }
+            .arabe{
+                display: flex;
+                width: 18.75rem;
+                margin: 0 .3125rem auto .3125rem;
+                .arabeFlag{
+                    margin: auto;
+                }
+                .arabeProd{
+                    margin: 0;
+                    text-align: center;
+                }
+                .arabePrecio{
+                    margin-left: 15%;
+                }
+                .arabeBoton{
+                    margin-left: 20%;
+                }
+            }
+            .mexico{
+                display: flex;
+                width: 18.75rem;
+                margin: 0 .3125rem auto .3125rem;
+                .mexicoFlag{
+                    margin: auto;
+                }
+                .mexicoProd{
+                    margin: 0;
+                    text-align: center;
+                }
+                .mexicoPrecio{
+                    margin-left: 15%;
+                }
+                .mexicoBoton{
+                    margin-left: 20%;
+                }
+            }
+            .japon{
+                display: flex;
+                width: 18.75rem;
+                margin: 0 .3125rem auto .3125rem;
+                
+                .japonFlag{
+                    margin: auto;
+                }
+                .japonProd{
+                    margin: 0;
+                    text-align: center;
+                }
+                .japonPrecio{
+                    margin-left: 15%;
+                }
+                .japonBoton{
+                    margin-left: 20%;
+                }
+            }
+        }
+        .thirdMain{
+            margin: .9375rem 1.25rem;
+            h2{
+                text-align: center;
+            }
+            .firstCarrousel{
+                margin: 1.25rem 0;
+                .prodCarrousel{
+                    margin: 1.25rem 0;
+                }
+            }
+        }
+    }
+}

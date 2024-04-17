@@ -1,0 +1,70 @@
+@mixin tablet{
+    @media(max-width: 768px){
+        header {
+            background-color: #004225b7;
+            .mainHeader{
+                margin: 0;
+                display: block;
+                height: auto;
+                h1{
+                    display: block;
+                    width: auto;
+                }
+                .navBar{
+                    display: block;
+                    margin: 0;
+                    ul{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+        .firstMain{
+        margin: 0 3%;
+        .divInicio{
+            h2{
+            font-size: 3rem;
+            }
+            img{
+                margin: 0 auto;
+                width: 80%;
+                height: auto;
+                }
+            }
+        }
+        .secondMain{
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            height: auto;
+            h2{
+                justify-content: center;
+                margin: 1rem 0;
+            }
+            article{
+                margin: .9375rem auto;
+            }
+
+        }
+        .thirdMain{
+            margin: 0 3%;
+            .firsCarrousel{
+                overflow: scroll;
+                justify-content: center;
+                .prodCarrousel{
+                    width: fit-content;
+                }
+            }
+            .secondCarrousel{
+                overflow: scroll;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+
+    
